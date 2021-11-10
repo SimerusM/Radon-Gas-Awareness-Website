@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %} Testing Info {% endblock %}
+{% block styles %} <link rel='stylesheet' href=" {{ url_for('static', filename='testing_info.css') }}"/> {% endblock %}
+
+{% block content %} 
+<div id="title">
+  <h1 style="color:black;font-size:65px;">Testing for Radon</h1>
+</div>
+<div>
+  <ul class="container">
+    <h3>Why?</h3>
+    <li>Radon is the #1 cause of lung cancer for non-smokers.</l1>
+    <li>Radon levels can vary widely from one home to another, even on the same street.</l1>
+    <li>With no smell, no colour and no taste the only way to know how much radon is in your home is to test for it.</l1>
+    <li>Health Canada stresses the importance of having every homeowner test their home, regardless of whether your community is known to have high radon levels.</l1>
+    <br>
+    <br>
+    <h3>How?</h3>
+    <li>Pick a good location for the test.</li>
+    <li>Leave the test in place for 91 days or more.</li>
+    <li>Return the test to the lab and wait for your radon test report.</li>
+    <li>If your radon level is high, take action to reduce it!</li>
+  </ul>
+</div>
+<div id="video">
+  <video width="760" height="500" controls>
+    <source src="randon.mp4" type="video/mp4">
+    <!-- <source src="movie.ogg" type="video/ogg"> -->
+  </video>
+
+<div id="additional">
+  <h5>If radon levels in your home are above the Canadian guideline, Health Canada recommends that you hire a professional certified under the Canadian National Radon Proficiency Program (C-NRPP). Lowering radon levels in a home requires specific technical knowledge and skills to ensure the job is done properly.</h5>
+  <br>
+  <h5> Choose a contractor to fix a radon problem just as you would choose someone to do other home renovations or repairs. It is wise to get more than one estimate if possible, and to ask for references. Contact some of those references to ask if they are satisfied with the contractors' work. Be sure to get a written cost estimate that outlines all of the work to be carried out. </h5>
+  <br>
+  <h5>To find a list of certified professionals contact the  Canadian National Radon Proficiency Program (C-NRPP) at 1-855-722-6777, go to www.c-nrpp.ca or email radon@hc-sc.gc.ca.</h5>
+  <br>
+  <h5> information on the  Canadian National Radon Proficiency certification training and programs is available online at: www.c-nrpp.ca.</h5>
+</div>
+<div>
+  <br>
+  <br>
+  <h3>Buy a Radon Testing Kit Now!</h3>
+  <br>
+  <a href="https://takeactiononradon.ca/test/radon-test-kits/#local_1" id="buttonLeft">Buy Local</a>
+  <a href="https://alphatracker.ca/" id="buttonRight">Buy Now</a>
+</div>
+
+
+
+</div>
+{% endblock %}
+
+  
